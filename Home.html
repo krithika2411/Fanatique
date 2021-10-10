@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Parallax scrolling website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" 
+     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
+     integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    </head>
+    <body><div class="Home">
+        <header id="header">
+            <a href="#" class="logo"></a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Links</a></li>
+                <li><a href="#">Councils</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Remainder</a></li>
+                
+            </ul>
+        </header>
+        <section>
+          <h1 id="text">Dhruv tara</h1><br><br>
+          <h3 id="text2"> your guiding star!</h3>
+           <a href="#" id="btn">Inspire Learning</a>
+          <img src="img/kri.png" id="moon">
+
+        </section>
+            <script type="text/javascript">
+             let moon = document.getElementById("moon")
+             let text = document.getElementById("text")
+             let btn = document.getElementById("btn")
+             let header = document.getElementById("header")
+              window.addEventListener('scroll', function(){
+               var value = window.scrollY
+               moon.style.left = value * 1.5+ 'px';
+               text.style.top = 200 + value * -0.4 + 'px';
+               btn.style.marginTop = value * 1 + 'px';
+               header.style.top = value * 0.5 + 'px';
+
+           })
+            </script>
+            <section1>
+                <span></span>
+    
+        
+        <div class="sec">
+        <h2>About</h2>
+        <p>In this current scenario, me and my peers faced a lot of issues while beginning out engineering journey like
+        :How to get started? How to proceed 1
+        ? How to exceed further in this journey? Hence, we bring to you a platform where our
+         juniors would find a ray of hope to begin their journey with!</p><br>
+         <p>Here, on Dhruvtara ,we give you the space to explore how engineering life works through the experienced engineering students themselves.
+        Get the resources you’ll need to study,important apps you’ll need to get started with engineering and get to know more about internships,
+        resume building and lot of thrilling stuff from our amazing seniors!</p>
+         </div>
+         <div class="flex-container">
+            <div class="container">
+                <div class="card">
+                    <div class="content">
+                        <!-- <h2>01</h2> -->
+                        <h3>LinkedIn</h3>
+                        <p>In today's world landing an internship or a job is a challenge,that's where LinkedIn steps in!It helps you to build a strong network of professional contacts,
+                            to get job alerts,let the companies find you and prepare for interviews.</p>
+                            <a href="https://in.linkedin.com/">Click here</a>
+                    </div>
+
+                    <div class="flex-container">
+                        <div class="container">
+                            <div class="card">
+                                <div class="content">
+                                    <h2>01</h2>
+                                    <h3>LinkedIn</h3>
+                                    <p>In today's world landing an internship or a job is a challenge,that's where LinkedIn steps in!It helps you to build a strong network of professional contacts,
+                                        to get job alerts,let the companies find you and prepare for interviews.</p>
+                                        <a href="https://in.linkedin.com/">Click here</a>
+                                </div>
+         
+         <!-- <section3>
+                 <div class="container">
+                     <div class="card">
+                         <div class="content">
+                             <div class="imgBx"><img src="img/krithika.jpg"></div>
+                             <div class="contentBx">
+                                 <h4>Someone famous <br><span1>Creative Designer</span1></h4>
+                             </div>
+                         </div>
+                     </div>
+                    <ul class="sci">
+                    <li 1style="--i:1">
+                        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </li 1>
+                    <li style="--i:1">
+                        <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i></i></a>
+                    </li>
+                </ul>
+
+                 </div>
+             </section3>
+          -->
+    </div></body>
+</html> 
