@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
+import {getAuth, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
 
 // import { getAnalytics } from "firebase/analytics";
 // const firebaseapp = require("firebase/app")
@@ -25,6 +25,8 @@ document.getElementById ("btn1").addEventListener ("click", signIn, false);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+
 // const analytics = getAnalytics(app);
   // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
@@ -45,8 +47,9 @@ const app = initializeApp(firebaseConfig);
 function signIn(){
     var email = document.getElementById('eemail').value;
     var password = document.getElementById('lpassword').value;
-    const promise = auth.signInWithEmailAndPassword(email,password);
-    promise.catch( e => alert(e.msg));
+    console.log(email,password)
+    const promise =signInWithEmailAndPassword(auth,email,password);
+    promise.catch(e => {alert(e)});
     promise.then( e => alert("login successfully"));
     // window.open("https://www.google.com","_self");
 }
