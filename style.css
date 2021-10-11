@@ -12,7 +12,7 @@
 body
 {
     overflow-x: hidden;
-    background: #fff;
+    background: #220b33;
     min-height: 100vh;
 }
 #header
@@ -109,14 +109,14 @@ span
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 4px;
-    height: 4px;
+    width: 20px;
+    height: 10px;
     background: #fff;
     border-radius: 50%;
     box-shadow: 0 0 0 4px rgba( 255,255,255,0.1),
-    0 0 0 8px rgba(255,255,255,0.1)
-    0 0 20px rgba(255,255,255,1);
-    animation: animate 7s linear infinite;
+    0 0 0 10px rgba(255,255,255,0.1)
+    0 0 25px rgba(255,255,255,1);
+    animation: animate 5s linear infinite;
 }
 span::before
 {
@@ -124,7 +124,7 @@ span::before
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 300px;
+    width: 500px;
     height: 1px;
     background: linear-gradient(90deg,#fff,transparent) ;
 }
@@ -258,27 +258,52 @@ section3::before
     background: linear-gradient(#0a2a43 , #1670d8);
 }
 
+section4 #text2
+{
+    position:absolute;
+    color:rgb(88, 88, 88);
+    margin-top: -10vh;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.22em;
+    font-family: 'Rancho', cursive;
+}
+
+section4 #text3
+{
+    position: absolute;
+    color:#dddde9;
+    text-align: center;
+    z-index: 1000;
+    font-size: 5vh;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+}
+
+
 .container
 {
     position:absolute;
-    /* display: flex; */
+    display: flex;
     background-size: cover;
-    background-color: #0a2a43;
-    background: #0a2a43;
-    /* justify-content: center;
-    align-items: center; */
+    /* background-color: #0a2a43; */
+    /* background: #0a2a43; */
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     z-index: 1;
 }
 .container .card
 {
     position: relative;
+    background-color: #0a2a43;
     width: 400px;
     height: 550px;
     margin: 20px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    background: rgba(225, 225, 225, 0.1);
+    border-radius: 10px;
+    background-color: #0a2a43;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -325,7 +350,7 @@ section3::before
 {
    position: relative;
     display: inline-block;
-    padding: 8ppx 20px;
+    padding: 8px 30px;
     margin-top: 15px;
     background: #fff;
     color: #000;
