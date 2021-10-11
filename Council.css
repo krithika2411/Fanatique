@@ -11,7 +11,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/pree.png);
+    background-image: url(img/council.png);
     background-size: cover;
     min-height: 100vh;
 }
@@ -36,17 +36,18 @@ body::after
 .Logo #text
 {
     font-size: 5em;
+    margin-top:-1em;
+    margin-left: 30%;
+    color: rgb(211, 209, 209);
     letter-spacing: 2px;
     font-weight: 400;
     font-family: 'Rancho', cursive;
-    display: flex;
     position: absolute;
     align-items: center;
     text-align: center;
     text-decoration: none;
     position:absolute;
     display: flex;
-    align-items: center;
     z-index: 1000;
 }
 .container
@@ -113,11 +114,11 @@ body::after
 {
    position: relative;
     display: inline-block;
-    padding: 8ppx 20px;
+    padding: 6px 20px;
     margin-top: 15px;
-    background: #fff;
+    background: rgb(82, 61, 129);;
     color: #000;
-    border-radius: 20px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);

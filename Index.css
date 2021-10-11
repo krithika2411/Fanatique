@@ -10,7 +10,8 @@
     box-sizing: border-box;
 }
 body {
-    background-color: bisque;
+   background-image: url(img/index.jpg);
+   background-size: cover;
     height: 100vh;
 }
 .container {
