@@ -1,6 +1,10 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
+
+// import { getAnalytics } from "firebase/analytics";
+// const firebaseapp = require("firebase/app")
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -17,44 +21,47 @@ const firebaseConfig = {
   measurementId: "G-K2P67M0VS4"
 };
 
+document.getElementById ("btn1").addEventListener ("click", signIn, false);
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
   // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 
-var datab  = firebase.database().ref('data');
-function UserRegister(){
-var email = document.getElementById('eemail').value;
-var password = document.getElementById('lpassword').value;
-firebase.auth().createUserWithEmailAndPassword(email,password).then(function(){
+// var datab  = firebase.database().ref('data');
+// function UserRegister(){
+// var email = document.getElementById('eemail').value;
+// var password = document.getElementById('lpassword').value;
+// firebase.auth().createUserWithEmailAndPassword(email,password).then(function(){
     
-}).catch(function (error){
-    var errorcode = error.code;
-    var errormsg = error.message;
-});
-}
-const auth = firebase.auth();
-function SignIn(){
+// }).catch(function (error){
+//     var errorcode = error.code;
+//     var errormsg = error.message;
+// });
+// }
+// const auth = firebase.auth();
+function signIn(){
     var email = document.getElementById('eemail').value;
     var password = document.getElementById('lpassword').value;
     const promise = auth.signInWithEmailAndPassword(email,password);
     promise.catch( e => alert(e.msg));
-    window.open("https://www.google.com","_self");
+    promise.then( e => alert("login successfully"));
+    // window.open("https://www.google.com","_self");
 }
-document.getElementById('form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    var userInfo = datab.push();
-    userInfo.set({
-        name: getId('fname'),
-        email : getId('eemail'),
-        password : getId('lpassword')
-    });
-    alert("Successfully Signed Up");
-    console.log("sent");
-    document.getElementById('form').reset();
-});
-function  getId(id){
-    return document.getElementById(id).value;
-}
+// document.getElementById('form').addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     var userInfo = datab.push();
+//     userInfo.set({
+//         name: getId('fname'),
+//         email : getId('eemail'),
+//         password : getId('lpassword')
+//     });
+//     alert("Successfully Signed Up");
+//     console.log("sent");
+//     document.getElementById('form').reset();
+// });
+// function  getId(id){
+//     return document.getElementById(id).value;
+// }
