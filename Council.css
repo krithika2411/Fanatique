@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#header2
+/* #header2
 {
     position: absolute;
     top: 0;
@@ -51,12 +51,12 @@
     border-radius: 20px;
 }
 #header2 ul li a:hover,
-#header2 ul li a.active
+#header2 ul li a.active 
 {
-    background:#553c8f ;
-    color: #fff;
+    background-color:#553c8f !important;
+     color: #fff !important; 
 
-}
+} */
 body
 {
     display: flex;
@@ -64,6 +64,7 @@ body
     align-items: center;
     background-image: url(img/council.png);
     background-size: cover;
+    background-repeat: no-repeat;
     min-height: 100vh;
 }
 body::before
@@ -86,8 +87,8 @@ body::after
 }
 .Logo #text
 {
-    font-size: 5em;
-    margin-top:-1em;
+    font-size: 4.5em;
+    margin-top:-0.8em;
     margin-left: 1%;
     color: rgb(211, 209, 209);
     letter-spacing: 2px;
