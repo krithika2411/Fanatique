@@ -30,6 +30,7 @@ body
     z-index: 1000;
     text-align: center;
     text-decoration: none;
+    display: flex;
 }
 
 #header3
@@ -50,7 +51,6 @@ body
     left: 20%;
     top: 1em;
     padding: 1em;
-    
     
 }
 
