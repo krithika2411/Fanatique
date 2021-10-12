@@ -95,10 +95,8 @@ body::after
     font-family: 'Rancho', cursive;
     position: absolute;
     align-items: center;
-    text-align: center;
     text-decoration: none;
     position:absolute;
-    display: flex;
     z-index: 1000;
 }
 .container
@@ -107,7 +105,7 @@ body::after
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    width: 1200px;
     z-index: 1;
 }
 .container .card
