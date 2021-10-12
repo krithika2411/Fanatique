@@ -27,16 +27,13 @@ body
     align-items: center;
 }
 #header1 {
-
-    padding: 5vh 5vw 5vh 5vw;
+    position: absolute;
+    margin-top: -22vh;
+    left: 60%;
+    top: 1em;
+    padding: 1em;
     
-}
-#header1 .logo
-{
-    color: #cfcfcf;
-    font-weight: 700;
-    font-size: 1em;
-    text-decoration: none;
+    
 }
 
 #header1 ul

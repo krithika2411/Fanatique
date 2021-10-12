@@ -32,6 +32,35 @@ body
     text-decoration: none;
 }
 
+#header3
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header3 {
+    position: absolute;
+    margin-top: 10vh;
+    left: 20%;
+    top: 1em;
+    padding: 1em;
+    
+    
+}
+
+#header3 ul
+{
+    float:right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container
 {
     position: relative;
